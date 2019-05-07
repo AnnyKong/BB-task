@@ -1,0 +1,600 @@
+   <crowd-bounding-box 
+          src='${image_url1}' 
+          labels="['Left Image', 'Right Image']" 
+          header="Draw bounding boxes to annotate the edges of left and right images" 
+          name="annotatedResult"> 
+ 
+          <short-instructions>Draw bounding boxes to annotate the edges of left and right images.</br> 
+           <h2 style="color:green;">Examples</h2> 
+           <h3 style="color:red;">  Red boxes are bad</h3> 
+           <h3 style="color:#FF9F00">  Yellow boxes are good</h3> 
+           <hr> 
+           - Do <b>include</b> artifacts - tapes, scratches, light leaks, etc. 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example1.png" 
+             style="max-width:100%"/><hr></br> 
+           - <b>Only</b> include contents of image. 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example2.png" 
+             style="max-width:100%"/><hr></br> 
+           - <b>Avoid</b> blurred areas. 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example3.png" 
+             style="max-width:100%"/></br> 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example4.png" 
+             style="max-width:100%"/><hr></br> 
+          </short-instructions> 
+ 
+          <!-- Use the full-instructions section for more detailed instructions that the 
+                Worker can open while working on the task. Including more detailed 
+                instructions and additional examples of good and bad answers here can 
+                help get good results. You can include any HTML here. --> 
+          <full-instructions header="Bounding Box Instructions"> 
+              <p>Use the bounding box tool to draw boxes to annotate the edges of both left and right images:</p> 
+ 
+                 <li>Annotate the full view of <b>left</b> and <b>right</b> image.</li> 
+                 <li>Do <b>include</b> "artifact" such as tapes, scratches, light leaks, etc.  
+                     overlap with the contents of images. You may use the left/right image to judge 
+                     whether the dubious part is the image content or not.</li> 
+                 <li>Make sure the box includes <b>only</b> contents of images. If you are unsure of 
+                     whether this is the content of the image, please leave out</li> 
+                 <li><b>Exclude</b> blurred boundaries of the images, 
+                   they're not considered as a part of the images.</li> 
+                 <li>Avoid curved edges, <b>only</b> include contents of the image.</li> 
+                 <li>If the image goes off the screen, label up to the edge of the image.</li> 
+ 
+                 <h2 style="color:green;">Examples</h2> 
+                   <h3 style="color:red;">  Red boxes are bad</h3> 
+                   <h3 style="color:#FF9F00">  Yellow boxes are good</h3> 
+                   <hr> 
+                   - Do <b>include</b> artifacts - tapes, scratches, light leaks, etc. 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example1.png" 
+                     style="max-width:100%"/><hr></br> 
+                   - <b>Only</b> include contents of image. 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example2.png" 
+                     style="max-width:100%"/><hr></br> 
+                   - <b>Avoid</b> blurred areas. 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example3.png" 
+                     style="max-width:100%"/></br> 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example4.png" 
+                     style="max-width:100%"/><hr></br> 
+              </ol> 
+          </full-instructions> 
+      </crowd-bounding-box>
+   <crowd-bounding-box 
+          src='${image_url2}' 
+          labels="['Left Image', 'Right Image']" 
+          header="Draw bounding boxes to annotate the edges of left and right images" 
+          name="annotatedResult"> 
+ 
+          <short-instructions>Draw bounding boxes to annotate the edges of left and right images.</br> 
+           <h2 style="color:green;">Examples</h2> 
+           <h3 style="color:red;">  Red boxes are bad</h3> 
+           <h3 style="color:#FF9F00">  Yellow boxes are good</h3> 
+           <hr> 
+           - Do <b>include</b> artifacts - tapes, scratches, light leaks, etc. 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example1.png" 
+             style="max-width:100%"/><hr></br> 
+           - <b>Only</b> include contents of image. 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example2.png" 
+             style="max-width:100%"/><hr></br> 
+           - <b>Avoid</b> blurred areas. 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example3.png" 
+             style="max-width:100%"/></br> 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example4.png" 
+             style="max-width:100%"/><hr></br> 
+          </short-instructions> 
+ 
+          <!-- Use the full-instructions section for more detailed instructions that the 
+                Worker can open while working on the task. Including more detailed 
+                instructions and additional examples of good and bad answers here can 
+                help get good results. You can include any HTML here. --> 
+          <full-instructions header="Bounding Box Instructions"> 
+              <p>Use the bounding box tool to draw boxes to annotate the edges of both left and right images:</p> 
+ 
+                 <li>Annotate the full view of <b>left</b> and <b>right</b> image.</li> 
+                 <li>Do <b>include</b> "artifact" such as tapes, scratches, light leaks, etc.  
+                     overlap with the contents of images. You may use the left/right image to judge 
+                     whether the dubious part is the image content or not.</li> 
+                 <li>Make sure the box includes <b>only</b> contents of images. If you are unsure of 
+                     whether this is the content of the image, please leave out</li> 
+                 <li><b>Exclude</b> blurred boundaries of the images, 
+                   they're not considered as a part of the images.</li> 
+                 <li>Avoid curved edges, <b>only</b> include contents of the image.</li> 
+                 <li>If the image goes off the screen, label up to the edge of the image.</li> 
+ 
+                 <h2 style="color:green;">Examples</h2> 
+                   <h3 style="color:red;">  Red boxes are bad</h3> 
+                   <h3 style="color:#FF9F00">  Yellow boxes are good</h3> 
+                   <hr> 
+                   - Do <b>include</b> artifacts - tapes, scratches, light leaks, etc. 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example1.png" 
+                     style="max-width:100%"/><hr></br> 
+                   - <b>Only</b> include contents of image. 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example2.png" 
+                     style="max-width:100%"/><hr></br> 
+                   - <b>Avoid</b> blurred areas. 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example3.png" 
+                     style="max-width:100%"/></br> 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example4.png" 
+                     style="max-width:100%"/><hr></br> 
+              </ol> 
+          </full-instructions> 
+      </crowd-bounding-box>
+   <crowd-bounding-box 
+          src='${image_url3}' 
+          labels="['Left Image', 'Right Image']" 
+          header="Draw bounding boxes to annotate the edges of left and right images" 
+          name="annotatedResult"> 
+ 
+          <short-instructions>Draw bounding boxes to annotate the edges of left and right images.</br> 
+           <h2 style="color:green;">Examples</h2> 
+           <h3 style="color:red;">  Red boxes are bad</h3> 
+           <h3 style="color:#FF9F00">  Yellow boxes are good</h3> 
+           <hr> 
+           - Do <b>include</b> artifacts - tapes, scratches, light leaks, etc. 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example1.png" 
+             style="max-width:100%"/><hr></br> 
+           - <b>Only</b> include contents of image. 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example2.png" 
+             style="max-width:100%"/><hr></br> 
+           - <b>Avoid</b> blurred areas. 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example3.png" 
+             style="max-width:100%"/></br> 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example4.png" 
+             style="max-width:100%"/><hr></br> 
+          </short-instructions> 
+ 
+          <!-- Use the full-instructions section for more detailed instructions that the 
+                Worker can open while working on the task. Including more detailed 
+                instructions and additional examples of good and bad answers here can 
+                help get good results. You can include any HTML here. --> 
+          <full-instructions header="Bounding Box Instructions"> 
+              <p>Use the bounding box tool to draw boxes to annotate the edges of both left and right images:</p> 
+ 
+                 <li>Annotate the full view of <b>left</b> and <b>right</b> image.</li> 
+                 <li>Do <b>include</b> "artifact" such as tapes, scratches, light leaks, etc.  
+                     overlap with the contents of images. You may use the left/right image to judge 
+                     whether the dubious part is the image content or not.</li> 
+                 <li>Make sure the box includes <b>only</b> contents of images. If you are unsure of 
+                     whether this is the content of the image, please leave out</li> 
+                 <li><b>Exclude</b> blurred boundaries of the images, 
+                   they're not considered as a part of the images.</li> 
+                 <li>Avoid curved edges, <b>only</b> include contents of the image.</li> 
+                 <li>If the image goes off the screen, label up to the edge of the image.</li> 
+ 
+                 <h2 style="color:green;">Examples</h2> 
+                   <h3 style="color:red;">  Red boxes are bad</h3> 
+                   <h3 style="color:#FF9F00">  Yellow boxes are good</h3> 
+                   <hr> 
+                   - Do <b>include</b> artifacts - tapes, scratches, light leaks, etc. 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example1.png" 
+                     style="max-width:100%"/><hr></br> 
+                   - <b>Only</b> include contents of image. 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example2.png" 
+                     style="max-width:100%"/><hr></br> 
+                   - <b>Avoid</b> blurred areas. 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example3.png" 
+                     style="max-width:100%"/></br> 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example4.png" 
+                     style="max-width:100%"/><hr></br> 
+              </ol> 
+          </full-instructions> 
+      </crowd-bounding-box>
+   <crowd-bounding-box 
+          src='${image_url4}' 
+          labels="['Left Image', 'Right Image']" 
+          header="Draw bounding boxes to annotate the edges of left and right images" 
+          name="annotatedResult"> 
+ 
+          <short-instructions>Draw bounding boxes to annotate the edges of left and right images.</br> 
+           <h2 style="color:green;">Examples</h2> 
+           <h3 style="color:red;">  Red boxes are bad</h3> 
+           <h3 style="color:#FF9F00">  Yellow boxes are good</h3> 
+           <hr> 
+           - Do <b>include</b> artifacts - tapes, scratches, light leaks, etc. 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example1.png" 
+             style="max-width:100%"/><hr></br> 
+           - <b>Only</b> include contents of image. 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example2.png" 
+             style="max-width:100%"/><hr></br> 
+           - <b>Avoid</b> blurred areas. 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example3.png" 
+             style="max-width:100%"/></br> 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example4.png" 
+             style="max-width:100%"/><hr></br> 
+          </short-instructions> 
+ 
+          <!-- Use the full-instructions section for more detailed instructions that the 
+                Worker can open while working on the task. Including more detailed 
+                instructions and additional examples of good and bad answers here can 
+                help get good results. You can include any HTML here. --> 
+          <full-instructions header="Bounding Box Instructions"> 
+              <p>Use the bounding box tool to draw boxes to annotate the edges of both left and right images:</p> 
+ 
+                 <li>Annotate the full view of <b>left</b> and <b>right</b> image.</li> 
+                 <li>Do <b>include</b> "artifact" such as tapes, scratches, light leaks, etc.  
+                     overlap with the contents of images. You may use the left/right image to judge 
+                     whether the dubious part is the image content or not.</li> 
+                 <li>Make sure the box includes <b>only</b> contents of images. If you are unsure of 
+                     whether this is the content of the image, please leave out</li> 
+                 <li><b>Exclude</b> blurred boundaries of the images, 
+                   they're not considered as a part of the images.</li> 
+                 <li>Avoid curved edges, <b>only</b> include contents of the image.</li> 
+                 <li>If the image goes off the screen, label up to the edge of the image.</li> 
+ 
+                 <h2 style="color:green;">Examples</h2> 
+                   <h3 style="color:red;">  Red boxes are bad</h3> 
+                   <h3 style="color:#FF9F00">  Yellow boxes are good</h3> 
+                   <hr> 
+                   - Do <b>include</b> artifacts - tapes, scratches, light leaks, etc. 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example1.png" 
+                     style="max-width:100%"/><hr></br> 
+                   - <b>Only</b> include contents of image. 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example2.png" 
+                     style="max-width:100%"/><hr></br> 
+                   - <b>Avoid</b> blurred areas. 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example3.png" 
+                     style="max-width:100%"/></br> 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example4.png" 
+                     style="max-width:100%"/><hr></br> 
+              </ol> 
+          </full-instructions> 
+      </crowd-bounding-box>
+   <crowd-bounding-box 
+          src='${image_url5}' 
+          labels="['Left Image', 'Right Image']" 
+          header="Draw bounding boxes to annotate the edges of left and right images" 
+          name="annotatedResult"> 
+ 
+          <short-instructions>Draw bounding boxes to annotate the edges of left and right images.</br> 
+           <h2 style="color:green;">Examples</h2> 
+           <h3 style="color:red;">  Red boxes are bad</h3> 
+           <h3 style="color:#FF9F00">  Yellow boxes are good</h3> 
+           <hr> 
+           - Do <b>include</b> artifacts - tapes, scratches, light leaks, etc. 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example1.png" 
+             style="max-width:100%"/><hr></br> 
+           - <b>Only</b> include contents of image. 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example2.png" 
+             style="max-width:100%"/><hr></br> 
+           - <b>Avoid</b> blurred areas. 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example3.png" 
+             style="max-width:100%"/></br> 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example4.png" 
+             style="max-width:100%"/><hr></br> 
+          </short-instructions> 
+ 
+          <!-- Use the full-instructions section for more detailed instructions that the 
+                Worker can open while working on the task. Including more detailed 
+                instructions and additional examples of good and bad answers here can 
+                help get good results. You can include any HTML here. --> 
+          <full-instructions header="Bounding Box Instructions"> 
+              <p>Use the bounding box tool to draw boxes to annotate the edges of both left and right images:</p> 
+ 
+                 <li>Annotate the full view of <b>left</b> and <b>right</b> image.</li> 
+                 <li>Do <b>include</b> "artifact" such as tapes, scratches, light leaks, etc.  
+                     overlap with the contents of images. You may use the left/right image to judge 
+                     whether the dubious part is the image content or not.</li> 
+                 <li>Make sure the box includes <b>only</b> contents of images. If you are unsure of 
+                     whether this is the content of the image, please leave out</li> 
+                 <li><b>Exclude</b> blurred boundaries of the images, 
+                   they're not considered as a part of the images.</li> 
+                 <li>Avoid curved edges, <b>only</b> include contents of the image.</li> 
+                 <li>If the image goes off the screen, label up to the edge of the image.</li> 
+ 
+                 <h2 style="color:green;">Examples</h2> 
+                   <h3 style="color:red;">  Red boxes are bad</h3> 
+                   <h3 style="color:#FF9F00">  Yellow boxes are good</h3> 
+                   <hr> 
+                   - Do <b>include</b> artifacts - tapes, scratches, light leaks, etc. 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example1.png" 
+                     style="max-width:100%"/><hr></br> 
+                   - <b>Only</b> include contents of image. 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example2.png" 
+                     style="max-width:100%"/><hr></br> 
+                   - <b>Avoid</b> blurred areas. 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example3.png" 
+                     style="max-width:100%"/></br> 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example4.png" 
+                     style="max-width:100%"/><hr></br> 
+              </ol> 
+          </full-instructions> 
+      </crowd-bounding-box>
+   <crowd-bounding-box 
+          src='${image_url6}' 
+          labels="['Left Image', 'Right Image']" 
+          header="Draw bounding boxes to annotate the edges of left and right images" 
+          name="annotatedResult"> 
+ 
+          <short-instructions>Draw bounding boxes to annotate the edges of left and right images.</br> 
+           <h2 style="color:green;">Examples</h2> 
+           <h3 style="color:red;">  Red boxes are bad</h3> 
+           <h3 style="color:#FF9F00">  Yellow boxes are good</h3> 
+           <hr> 
+           - Do <b>include</b> artifacts - tapes, scratches, light leaks, etc. 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example1.png" 
+             style="max-width:100%"/><hr></br> 
+           - <b>Only</b> include contents of image. 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example2.png" 
+             style="max-width:100%"/><hr></br> 
+           - <b>Avoid</b> blurred areas. 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example3.png" 
+             style="max-width:100%"/></br> 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example4.png" 
+             style="max-width:100%"/><hr></br> 
+          </short-instructions> 
+ 
+          <!-- Use the full-instructions section for more detailed instructions that the 
+                Worker can open while working on the task. Including more detailed 
+                instructions and additional examples of good and bad answers here can 
+                help get good results. You can include any HTML here. --> 
+          <full-instructions header="Bounding Box Instructions"> 
+              <p>Use the bounding box tool to draw boxes to annotate the edges of both left and right images:</p> 
+ 
+                 <li>Annotate the full view of <b>left</b> and <b>right</b> image.</li> 
+                 <li>Do <b>include</b> "artifact" such as tapes, scratches, light leaks, etc.  
+                     overlap with the contents of images. You may use the left/right image to judge 
+                     whether the dubious part is the image content or not.</li> 
+                 <li>Make sure the box includes <b>only</b> contents of images. If you are unsure of 
+                     whether this is the content of the image, please leave out</li> 
+                 <li><b>Exclude</b> blurred boundaries of the images, 
+                   they're not considered as a part of the images.</li> 
+                 <li>Avoid curved edges, <b>only</b> include contents of the image.</li> 
+                 <li>If the image goes off the screen, label up to the edge of the image.</li> 
+ 
+                 <h2 style="color:green;">Examples</h2> 
+                   <h3 style="color:red;">  Red boxes are bad</h3> 
+                   <h3 style="color:#FF9F00">  Yellow boxes are good</h3> 
+                   <hr> 
+                   - Do <b>include</b> artifacts - tapes, scratches, light leaks, etc. 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example1.png" 
+                     style="max-width:100%"/><hr></br> 
+                   - <b>Only</b> include contents of image. 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example2.png" 
+                     style="max-width:100%"/><hr></br> 
+                   - <b>Avoid</b> blurred areas. 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example3.png" 
+                     style="max-width:100%"/></br> 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example4.png" 
+                     style="max-width:100%"/><hr></br> 
+              </ol> 
+          </full-instructions> 
+      </crowd-bounding-box>
+   <crowd-bounding-box 
+          src='${image_url7}' 
+          labels="['Left Image', 'Right Image']" 
+          header="Draw bounding boxes to annotate the edges of left and right images" 
+          name="annotatedResult"> 
+ 
+          <short-instructions>Draw bounding boxes to annotate the edges of left and right images.</br> 
+           <h2 style="color:green;">Examples</h2> 
+           <h3 style="color:red;">  Red boxes are bad</h3> 
+           <h3 style="color:#FF9F00">  Yellow boxes are good</h3> 
+           <hr> 
+           - Do <b>include</b> artifacts - tapes, scratches, light leaks, etc. 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example1.png" 
+             style="max-width:100%"/><hr></br> 
+           - <b>Only</b> include contents of image. 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example2.png" 
+             style="max-width:100%"/><hr></br> 
+           - <b>Avoid</b> blurred areas. 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example3.png" 
+             style="max-width:100%"/></br> 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example4.png" 
+             style="max-width:100%"/><hr></br> 
+          </short-instructions> 
+ 
+          <!-- Use the full-instructions section for more detailed instructions that the 
+                Worker can open while working on the task. Including more detailed 
+                instructions and additional examples of good and bad answers here can 
+                help get good results. You can include any HTML here. --> 
+          <full-instructions header="Bounding Box Instructions"> 
+              <p>Use the bounding box tool to draw boxes to annotate the edges of both left and right images:</p> 
+ 
+                 <li>Annotate the full view of <b>left</b> and <b>right</b> image.</li> 
+                 <li>Do <b>include</b> "artifact" such as tapes, scratches, light leaks, etc.  
+                     overlap with the contents of images. You may use the left/right image to judge 
+                     whether the dubious part is the image content or not.</li> 
+                 <li>Make sure the box includes <b>only</b> contents of images. If you are unsure of 
+                     whether this is the content of the image, please leave out</li> 
+                 <li><b>Exclude</b> blurred boundaries of the images, 
+                   they're not considered as a part of the images.</li> 
+                 <li>Avoid curved edges, <b>only</b> include contents of the image.</li> 
+                 <li>If the image goes off the screen, label up to the edge of the image.</li> 
+ 
+                 <h2 style="color:green;">Examples</h2> 
+                   <h3 style="color:red;">  Red boxes are bad</h3> 
+                   <h3 style="color:#FF9F00">  Yellow boxes are good</h3> 
+                   <hr> 
+                   - Do <b>include</b> artifacts - tapes, scratches, light leaks, etc. 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example1.png" 
+                     style="max-width:100%"/><hr></br> 
+                   - <b>Only</b> include contents of image. 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example2.png" 
+                     style="max-width:100%"/><hr></br> 
+                   - <b>Avoid</b> blurred areas. 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example3.png" 
+                     style="max-width:100%"/></br> 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example4.png" 
+                     style="max-width:100%"/><hr></br> 
+              </ol> 
+          </full-instructions> 
+      </crowd-bounding-box>
+   <crowd-bounding-box 
+          src='${image_url8}' 
+          labels="['Left Image', 'Right Image']" 
+          header="Draw bounding boxes to annotate the edges of left and right images" 
+          name="annotatedResult"> 
+ 
+          <short-instructions>Draw bounding boxes to annotate the edges of left and right images.</br> 
+           <h2 style="color:green;">Examples</h2> 
+           <h3 style="color:red;">  Red boxes are bad</h3> 
+           <h3 style="color:#FF9F00">  Yellow boxes are good</h3> 
+           <hr> 
+           - Do <b>include</b> artifacts - tapes, scratches, light leaks, etc. 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example1.png" 
+             style="max-width:100%"/><hr></br> 
+           - <b>Only</b> include contents of image. 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example2.png" 
+             style="max-width:100%"/><hr></br> 
+           - <b>Avoid</b> blurred areas. 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example3.png" 
+             style="max-width:100%"/></br> 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example4.png" 
+             style="max-width:100%"/><hr></br> 
+          </short-instructions> 
+ 
+          <!-- Use the full-instructions section for more detailed instructions that the 
+                Worker can open while working on the task. Including more detailed 
+                instructions and additional examples of good and bad answers here can 
+                help get good results. You can include any HTML here. --> 
+          <full-instructions header="Bounding Box Instructions"> 
+              <p>Use the bounding box tool to draw boxes to annotate the edges of both left and right images:</p> 
+ 
+                 <li>Annotate the full view of <b>left</b> and <b>right</b> image.</li> 
+                 <li>Do <b>include</b> "artifact" such as tapes, scratches, light leaks, etc.  
+                     overlap with the contents of images. You may use the left/right image to judge 
+                     whether the dubious part is the image content or not.</li> 
+                 <li>Make sure the box includes <b>only</b> contents of images. If you are unsure of 
+                     whether this is the content of the image, please leave out</li> 
+                 <li><b>Exclude</b> blurred boundaries of the images, 
+                   they're not considered as a part of the images.</li> 
+                 <li>Avoid curved edges, <b>only</b> include contents of the image.</li> 
+                 <li>If the image goes off the screen, label up to the edge of the image.</li> 
+ 
+                 <h2 style="color:green;">Examples</h2> 
+                   <h3 style="color:red;">  Red boxes are bad</h3> 
+                   <h3 style="color:#FF9F00">  Yellow boxes are good</h3> 
+                   <hr> 
+                   - Do <b>include</b> artifacts - tapes, scratches, light leaks, etc. 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example1.png" 
+                     style="max-width:100%"/><hr></br> 
+                   - <b>Only</b> include contents of image. 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example2.png" 
+                     style="max-width:100%"/><hr></br> 
+                   - <b>Avoid</b> blurred areas. 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example3.png" 
+                     style="max-width:100%"/></br> 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example4.png" 
+                     style="max-width:100%"/><hr></br> 
+              </ol> 
+          </full-instructions> 
+      </crowd-bounding-box>
+   <crowd-bounding-box 
+          src='${image_url9}' 
+          labels="['Left Image', 'Right Image']" 
+          header="Draw bounding boxes to annotate the edges of left and right images" 
+          name="annotatedResult"> 
+ 
+          <short-instructions>Draw bounding boxes to annotate the edges of left and right images.</br> 
+           <h2 style="color:green;">Examples</h2> 
+           <h3 style="color:red;">  Red boxes are bad</h3> 
+           <h3 style="color:#FF9F00">  Yellow boxes are good</h3> 
+           <hr> 
+           - Do <b>include</b> artifacts - tapes, scratches, light leaks, etc. 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example1.png" 
+             style="max-width:100%"/><hr></br> 
+           - <b>Only</b> include contents of image. 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example2.png" 
+             style="max-width:100%"/><hr></br> 
+           - <b>Avoid</b> blurred areas. 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example3.png" 
+             style="max-width:100%"/></br> 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example4.png" 
+             style="max-width:100%"/><hr></br> 
+          </short-instructions> 
+ 
+          <!-- Use the full-instructions section for more detailed instructions that the 
+                Worker can open while working on the task. Including more detailed 
+                instructions and additional examples of good and bad answers here can 
+                help get good results. You can include any HTML here. --> 
+          <full-instructions header="Bounding Box Instructions"> 
+              <p>Use the bounding box tool to draw boxes to annotate the edges of both left and right images:</p> 
+ 
+                 <li>Annotate the full view of <b>left</b> and <b>right</b> image.</li> 
+                 <li>Do <b>include</b> "artifact" such as tapes, scratches, light leaks, etc.  
+                     overlap with the contents of images. You may use the left/right image to judge 
+                     whether the dubious part is the image content or not.</li> 
+                 <li>Make sure the box includes <b>only</b> contents of images. If you are unsure of 
+                     whether this is the content of the image, please leave out</li> 
+                 <li><b>Exclude</b> blurred boundaries of the images, 
+                   they're not considered as a part of the images.</li> 
+                 <li>Avoid curved edges, <b>only</b> include contents of the image.</li> 
+                 <li>If the image goes off the screen, label up to the edge of the image.</li> 
+ 
+                 <h2 style="color:green;">Examples</h2> 
+                   <h3 style="color:red;">  Red boxes are bad</h3> 
+                   <h3 style="color:#FF9F00">  Yellow boxes are good</h3> 
+                   <hr> 
+                   - Do <b>include</b> artifacts - tapes, scratches, light leaks, etc. 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example1.png" 
+                     style="max-width:100%"/><hr></br> 
+                   - <b>Only</b> include contents of image. 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example2.png" 
+                     style="max-width:100%"/><hr></br> 
+                   - <b>Avoid</b> blurred areas. 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example3.png" 
+                     style="max-width:100%"/></br> 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example4.png" 
+                     style="max-width:100%"/><hr></br> 
+              </ol> 
+          </full-instructions> 
+      </crowd-bounding-box>
+   <crowd-bounding-box 
+          src='${image_url10}' 
+          labels="['Left Image', 'Right Image']" 
+          header="Draw bounding boxes to annotate the edges of left and right images" 
+          name="annotatedResult"> 
+ 
+          <short-instructions>Draw bounding boxes to annotate the edges of left and right images.</br> 
+           <h2 style="color:green;">Examples</h2> 
+           <h3 style="color:red;">  Red boxes are bad</h3> 
+           <h3 style="color:#FF9F00">  Yellow boxes are good</h3> 
+           <hr> 
+           - Do <b>include</b> artifacts - tapes, scratches, light leaks, etc. 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example1.png" 
+             style="max-width:100%"/><hr></br> 
+           - <b>Only</b> include contents of image. 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example2.png" 
+             style="max-width:100%"/><hr></br> 
+           - <b>Avoid</b> blurred areas. 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example3.png" 
+             style="max-width:100%"/></br> 
+           <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example4.png" 
+             style="max-width:100%"/><hr></br> 
+          </short-instructions> 
+ 
+          <!-- Use the full-instructions section for more detailed instructions that the 
+                Worker can open while working on the task. Including more detailed 
+                instructions and additional examples of good and bad answers here can 
+                help get good results. You can include any HTML here. --> 
+          <full-instructions header="Bounding Box Instructions"> 
+              <p>Use the bounding box tool to draw boxes to annotate the edges of both left and right images:</p> 
+ 
+                 <li>Annotate the full view of <b>left</b> and <b>right</b> image.</li> 
+                 <li>Do <b>include</b> "artifact" such as tapes, scratches, light leaks, etc.  
+                     overlap with the contents of images. You may use the left/right image to judge 
+                     whether the dubious part is the image content or not.</li> 
+                 <li>Make sure the box includes <b>only</b> contents of images. If you are unsure of 
+                     whether this is the content of the image, please leave out</li> 
+                 <li><b>Exclude</b> blurred boundaries of the images, 
+                   they're not considered as a part of the images.</li> 
+                 <li>Avoid curved edges, <b>only</b> include contents of the image.</li> 
+                 <li>If the image goes off the screen, label up to the edge of the image.</li> 
+ 
+                 <h2 style="color:green;">Examples</h2> 
+                   <h3 style="color:red;">  Red boxes are bad</h3> 
+                   <h3 style="color:#FF9F00">  Yellow boxes are good</h3> 
+                   <hr> 
+                   - Do <b>include</b> artifacts - tapes, scratches, light leaks, etc. 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example1.png" 
+                     style="max-width:100%"/><hr></br> 
+                   - <b>Only</b> include contents of image. 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example2.png" 
+                     style="max-width:100%"/><hr></br> 
+                   - <b>Avoid</b> blurred areas. 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example3.png" 
+                     style="max-width:100%"/></br> 
+                   <img src="https://s3-us-west-2.amazonaws.com/slowglass-testamk/examples/example4.png" 
+                     style="max-width:100%"/><hr></br> 
+              </ol> 
+          </full-instructions> 
+      </crowd-bounding-box>
